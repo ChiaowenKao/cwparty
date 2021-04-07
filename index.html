@@ -23,6 +23,9 @@
           <script src="js/jquery-3.6.0.min.js"></script>
           <script src="js/bootstrap.min.js"></script>
           <script src="js/popper.min.js"></script>
+        <!-- fontawesome的 stylesheet，在 -->
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
         
     
 </head>
@@ -35,7 +38,7 @@
          <!-- 可以改成自己的logo -->
           <a class="navbar-brand" href="#">
             <!-- 用CSS調整寬度 -->
-            <img src="logo-img.png">
+            <img src="img/logo-img.png">
 
           </a>
           <!-- toggler 是mobile type的時候才會出現 -->
@@ -78,8 +81,8 @@
                     <div class="col-md-12">
                         <h1>最有趣的課程 </h1>
                         <p class="lead">~SO EASY!SO HAPPY~</p>
-                        <a class="btn" href="https://getbootstrap.com/docs/4.3/layout/grid/" target="_blank">加入課程</a>
-                        <a class="btn" href="https://getbootstrap.com/docs/3.4/components/" target="_blank" >更多資訊</a>
+                        <a class="btn btn-info" href="https://getbootstrap.com/docs/4.3/layout/grid/" target="_blank">加入課程</a>
+                        <a class="btn btn-info " href="https://getbootstrap.com/docs/3.4/components/" target="_blank" >更多資訊</a>
                   </div>  
                 </div>
             </div>
@@ -96,7 +99,7 @@
               <!-- 8格下再弄一個row,一樣會分成12格 -->
               <div class="row">
                 <div class="col-md-4">
-                  <img src="bt.png">
+                  <img src="img/bt.png">
                   <h6>bootstrap 開課中... </h6>
                 </div>
                 <div class="col-md-8 text-left">
@@ -127,28 +130,88 @@
         </div>
 
         <div class="col-md-4">
-         <div class="outer">
-           <div class="upper">
-            <img src="S1.jpg">
-            
+          <!-- 最後才轉換成按鈕 用a tag，但字會變色，所以用CSS 刪掉所有屬性-->
+            <div class="outer">
+              <a href="https://www.w3schools.com/html/" target="_blank"> 
+                <div class="upper">
+                  <img src="img/NEWS1.jpg"> 
+                              <!-- 直接這樣input image 會超出範圍，用CSS修改 name: img-->
+                    <div class="innertext"> 
+                              <!-- 這樣字也不會在圖上，會在圖外，用CSS修改 name: #third .innertext span, #third .innertext span h6-->
+                      <span>課程一</span>
+                      <h6> 三月底前打8折 </h6> 
+                    </div>
+                </div>
 
-           </div>
+                <div class="lower">
+                              <!-- 設定h5的margin參數，用CSS修改 name:#third lower h5-->
+                    <h5> HTML設計 </h5>
+                              <!-- 1.加上文字icon: fontawesome https://fontawesome.com/  -->
+                              <!-- 2.直接放是不會成功的，要在head加上script -->
+                              <!-- 3.CSS調整位置 name: #third .lower i-->
+                    <span> <i class="fas fa-search-location"></i> 上課地點:桃園銘傳cc702</span>
+                    <br>
+                    <span> <i class="fas fa-phone-square-alt"></i> 報名電話:0988888888</span>
+                </div>
+              </a>
+            </div>
+        </div>
 
-           <div class="lower">
-             
-           </div>
-
-         </div>
+        <div class="col-md-4">
+                   <!-- 最後才轉換成按鈕 用a tag，但字會變色，所以用CSS 刪掉所有屬性-->
+                   <div class="outer">
+                    <a href="https://developer.mozilla.org/zh-TW/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank"> 
+                      <div class="upper">
+                        <img src="img/NEWS2.jpg"> 
+                                    <!-- 直接這樣input image 會超出範圍，用CSS修改 name: img-->
+                          <div class="innertext"> 
+                                    <!-- 這樣字也不會在圖上，會在圖外，用CSS修改 name: #third .innertext span, #third .innertext span h6-->
+                            <span>課程二</span>
+                            <h6> 四月底前打8折 </h6> 
+                          </div>
+                      </div>
+      
+                      <div class="lower">
+                                    <!-- 設定h5的margin參數，用CSS修改 name:#third lower h5-->
+                          <h5> CSS設計 </h5>
+                                    <!-- 1.加上文字icon: fontawesome https://fontawesome.com/  -->
+                                    <!-- 2.直接放是不會成功的，要在head加上script -->
+                                    <!-- 3.CSS調整位置 name: #third .lower i-->
+                          <span> <i class="fas fa-search-location"></i> 上課地點:桃園銘傳cc702</span>
+                          <br>
+                          <span> <i class="fas fa-phone-square-alt"></i> 報名電話:0988888888</span>
+                      </div>
+                    </a>
+                  </div>
 
         </div>
 
         <div class="col-md-4">
-          test2
-
-        </div>
-
-        <div class="col-md-4">
-          test3
+                  <!-- 最後才轉換成按鈕 用a tag，但字會變色，所以用CSS 刪掉所有屬性-->
+                  <div class="outer">
+                    <a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" target="_blank"> 
+                      <div class="upper">
+                        <img src="img/NEWS3.png"> 
+                                    <!-- 直接這樣input image 會超出範圍，用CSS修改 name: img-->
+                          <div class="innertext"> 
+                                    <!-- 這樣字也不會在圖上，會在圖外，用CSS修改 name: #third .innertext span, #third .innertext span h6-->
+                            <span>課程三</span>
+                            <h6> 五月底前打8折 </h6> 
+                          </div>
+                      </div>
+      
+                      <div class="lower">
+                                    <!-- 設定h5的margin參數，用CSS修改 name:#third lower h5-->
+                          <h5> Bootstrap設計 </h5>
+                                    <!-- 1.加上文字icon: fontawesome https://fontawesome.com/  -->
+                                    <!-- 2.直接放是不會成功的，要在head加上script -->
+                                    <!-- 3.CSS調整位置 name: #third .lower i-->
+                          <span> <i class="fas fa-search-location"></i> 上課地點:桃園銘傳cc702</span>
+                          <br>
+                          <span> <i class="fas fa-phone-square-alt"></i> 報名電話:0988888888</span>
+                      </div>
+                    </a>
+                  </div>
 
         </div>
 
@@ -160,5 +223,60 @@
 
    </section>
 
+   <section id="contactus">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-8 offest-md-2 text-center">
+            <h3>加入CW Party的Mail</h3>
+         </div>
+       </div>
+       <div class="row">
+        <div class="col-md-8 offest-md-2 text-left">
+           <p>最新課程通知<p>
+             <!-- Email輸入直接套bootstrap的component https://getbootstrap.com/docs/4.3/components/input-group/ -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default"></span>
+              </div>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Your Email">         
+            </div>
+            <a class="btn btn-info" href="#">送出mail</a>
+        </div>
+      </div>
+     </div>
+   </section>
+
+   <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-left">
+          <img src="img/logo-img.png">
+          <p> RWD網頁高手培訓班</p>
+        </div>
+
+        <div class="col-md-4 text-left">
+          <h5>連結</h5>
+          <!-- UL default 會有點點 用CSS改掉 name footer ul-->
+          <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="index.html">課程大綱</a></li>
+          </ul>
+          
+          <ul>
+            <li><a href="index.html">常見問題</a></li>
+            <li><a href="index.html">聯絡我們</a></li>
+          </ul>
+        </div>  
+
+      <div class="col-md-4 text-left">
+        <h5>聯絡我們</h5>
+        <p> 桃園市龜山區大同里德明路 5 號</p>
+        <p> 電話：03-350-7001</p>
+
+      </div>
+
+    </div>
+
+   </footer>
 </body>
 </html>
